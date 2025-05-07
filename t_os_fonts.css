@@ -1,0 +1,103 @@
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: italic;
+	font-weight: normal;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Italic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: italic;
+	font-weight: bold;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-BoldItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: normal;
+	font-weight: light;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: italic;
+	font-weight: light;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-LightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: normal;
+	font-weight: lighter;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ExtraLight.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: italic;
+	font-weight: lighter;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: normal;
+	font-weight: thin;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Thin.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NotoSansDisplay';
+	font-style: italic;
+	font-weight: thin;
+	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ThinItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Frutiger'), url('fonts/Frutiger.woff') format('woff');
+}
+
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Frutiger Bold'), url('fonts/Frutiger_bold.woff') format('woff');
+}
+
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: light;
+	src: local('Frutiger Light'), url('fonts/Frutiger Light.ttf'), format('truetype');
+}

@@ -1,111 +1,11 @@
 :root
 {
-	--teaos-background: radial-gradient(ellipse at center 0, rgba(57, 87, 92, 1) 100%, rgba(99, 134, 145, 1) 0%);
-	--teaos-border: #EEDDCC;
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: normal;
-	font-weight: normal;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: italic;
-	font-weight: normal;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Italic.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: normal;
-	font-weight: bold;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: italic;
-	font-weight: bold;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-BoldItalic.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: normal;
-	font-weight: light;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Light.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: italic;
-	font-weight: light;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-LightItalic.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: normal;
-	font-weight: lighter;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ExtraLight.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: italic;
-	font-weight: lighter;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ExtraLightItalic.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: normal;
-	font-weight: thin;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-Thin.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'NotoSansDisplay';
-	font-style: italic;
-	font-weight: thin;
-	src: url('fonts/NotoSansDisplay/NotoSansDisplay-ThinItalic.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'Frutiger';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Frutiger'), url('fonts/Frutiger.woff') format('woff');
-}
-
-@font-face
-{
-	font-family: 'Frutiger';
-	font-style: normal;
-	font-weight: bold;
-	src: local('Frutiger Bold'), url('fonts/Frutiger_bold.woff') format('woff');
-}
-
-@font-face
-{
-	font-family: 'Frutiger';
-	font-style: normal;
-	font-weight: light;
-	src: local('Frutiger Light'), url('fonts/Frutiger Light.ttf'), format('truetype');
+	--teaos-border: #eeddcc;
+	--teaos-background: radial-gradient(ellipse at center 0, #39575cff 100%, #638691ff 0%);
+	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);;
+	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);;
+	--teaos-gradient-green-hover: radial-gradient(100% 90% at center top, #5fdc67f2 0%, #58a745f2 95%);;
+	--teaos-gradient-green-active: radial-gradient(100% 90% at center top, #49b851f2 0%, #40a247f2 95%);;
 }
 
 body
@@ -117,35 +17,56 @@ body
 
 .use-custom-cursor,
 .use-custom-cursor *
-{ cursor: url('img/airplane_cursor_low-res.png') 1 2, auto; }
+{ cursor: url('img/airplane_cursor_low-res.png') 1 1, auto; }
+
+.use-custom-cursor a,
+.use-custom-cursor a *
+{ cursor: url('img/airplane_cursor_low-res_select.png') 3 22, auto; }
 
 .inset
 {
-	background-color: #454545;
-	color: transparent;
-	text-shadow: 1.8px 1.8px 1px rgba(255, 255, 255, 0.7);
-	-webkit-background-clip: text;
+	text-transform: lowercase;
+	background: linear-gradient(0deg, #a6a6a6 0%, #d3d4d3 100%);
+	filter: drop-shadow(0px -2px 1px #00000034);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+a.inset:hover
+{
+	text-transform: lowercase;
+	background: linear-gradient(0deg, #bababa 0%, #dfdfdf 100%);
+	filter: drop-shadow(0px -2px 1px r#00000034);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+a.inset:active
+{
+	text-transform: lowercase;
+	background: linear-gradient(0deg, #9b9b9b 0%, #c8c9c8 100%);
+	filter: drop-shadow(0px -2px 1px #00000034);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .header
 {
+	height: 140px;
+	background: var(--teaos-gradient-blue);
 	display: flex;
-	height: 20vh;
-	align-items: center;
-	text-align: center;
-	padding-left: 1%;
-	margin-top: 0;
-	background:  radial-gradient(100% 90% at center top, rgba(17, 80, 105, 0.95) 0%, rgba(52, 158, 194, 0.95) 95%);
-	font-family: NotoSansDisplay;
-	h1
+	height: 140px;
+	justify-content: center;
+	align-items: flex-end;
+	a
 	{
+		text-decoration: none;
+		font-family: NotoSansDisplay;
 		font-weight: lighter;
 		font-size: 90px;
-		display: flex;
-		user-select: none;
 		b
 		{
-			font-size: 120px;
+			font-size: 110px;
 		}
 	}
 }
@@ -166,9 +87,22 @@ body
 #teaos .button
 {
 	width: 200px;
-	height: 80px;
+	height: 200px;
 	font-family: Bitter;
 	font-size: 62px;
 	text-align: center;
 	vertical-align: middle;
+	background: var(--teaos-gradient-green);
+	border: none;
+	border-radius: 15px;
+}
+
+#teaos .button:hover
+{
+	background: var(--teaos-gradient-green-hover);
+}
+
+#teaos .button:active
+{
+	background: var(--teaos-gradient-green-active);
 }
