@@ -77,12 +77,12 @@ header
 			display: flex;
 			flex-direction: column;
 			background: mediumorchid;
-			flex-basis: 50vw;
+/*			flex-basis: 50vw;*/ /* uncomment this when more panels are added */
 			border: darkorchid solid 0.6vmin;
 			border-radius: 2vmin 2vmin 0 0;
 			overflow: hidden;
 			margin: 1vmin;
-			margin-left: auto;
+/*			margin-left: auto;*/ /* uncomment this when more panels are added */
 			height: 79.5vh;
 
 			& .label
