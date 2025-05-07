@@ -1,0 +1,47 @@
+.terminal.container
+{
+	height: 89vh;
+	margin-top: 1vh;
+}
+
+#terminal
+{
+	height: 100%;
+}
+
+.terminal-toggle
+{
+	color: red;
+	text-align: center;
+	height: 60px;
+	width: 80px;
+	font-size: 24px;
+}
+
+.terminal-toggle.active
+{
+	color: green;
+}
+
+#loading-image
+{
+	animation: fake-loading 6s linear forwards;
+}
+
+@keyframes fake-loading
+{
+  0% {clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);}
+  26% {clip-path: polygon(0 0, 100% 0, 100% 8%, 0 8%);}
+  48% {clip-path: polygon(0 0, 100% 0, 100% 8%, 0 8%);}
+
+  48.1% {clip-path: polygon(0 0, 100% 0, 100% 24%, 0 24%);}
+  51% {clip-path: polygon(0 0, 100% 0, 100% 24%, 0 24%);}
+
+  51.1% {clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);}
+  58% {clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);}
+  62% {clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);}
+
+  62.1% {clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);}
+  75% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+  100% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}

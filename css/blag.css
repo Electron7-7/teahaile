@@ -1,0 +1,69 @@
+li { list-style: none; }
+
+#blog-embed
+{
+	& .post
+	{
+		color: greenyellow;
+		background: darkcyan;
+		text-align: left;
+		font-size: 3.5vmin;
+		font-weight: bold;
+		letter-spacing: 0.1vmin;
+		line-height: 135%;
+		border-style: ridge;
+		border-color: darkgreen;
+		border-width: 0.6vmin;
+		margin: 2vmin;
+	}
+
+	& .timestamp
+	{
+		color: snow;
+		text-align: center;
+		background-color: darkviolet;
+		font-size: 4.8vmin;
+	}
+
+	& .content
+	{
+		padding: 0.8vmin 1.5vmin 0.8vmin 1.5vmin;
+
+		& > code
+		{
+			color: white;
+			background: #0005;
+			padding: 0.3vmin;
+			font-size: 90%;
+			border-radius: 0.2vmin;
+		}
+	}
+
+	&.blog.embed
+	{
+		& .post
+		{
+			font-size: 3vmin;
+			margin: 2vmin 0;
+
+			&:first-child
+			{
+				margin: 0;
+			}
+		}
+
+		& .timestamp
+		{
+			font-size: 3.7vmin;
+		}
+	}
+}
+
+
+.blog.main
+{
+	background: url('/img/groovey.png');
+	background-repeat: round;
+	background-size: unset;
+	padding: 1vmin 2.3vmin;
+}
