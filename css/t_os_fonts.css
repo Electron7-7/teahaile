@@ -1,0 +1,169 @@
+/*  NotoSansDisplay - Regular  */
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Display';
+    src: url('/fonts/NotoSansDisplay/NotoSansDisplay-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*  Frutiger  */
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Frutiger'), url('/fonts/Frutiger.woff') format('woff');
+}
+
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Frutiger Bold'), url('/fonts/Frutiger_bold.woff') format('woff');
+}
+
+@font-face
+{
+	font-family: 'Frutiger';
+	font-style: normal;
+	font-weight: light;
+	src: local('Frutiger Light'), url('/fonts/Frutiger Light.ttf'), format('truetype');
+}

@@ -1,35 +1,47 @@
 const stingers = [
  "copyright lololol",
- "funnily enough, I was only born in 2002",
  "don't try any of this at home",
  "you heard him, don't do it!",
  "reality is just two ts away from being realtitty",
- "FUCKFUCKFUCKFUCKFUCK(and so on and so forth)",
- "Limeade > Lemonade... sorry, but it's true",
- "If you thought <i>that</i> was bad...",
- "teahaile1 is RogerOThornhill, confirmed!!!"
+ "limeade > lemonade... sorry, but it's true",
+ "and if you thought <i>that</i> was bad...",
+ "teahaile1 is RogerOThornhill, confirmed!!!",
+ "I miss the 00s...",
+ // "check out the Wii theme",
+ "I love my online boyfriend :3",
+ ":3c",
+ "<|:38"
 ]
 
 $(document).ready(function()
 {
-	$('#blog-embed').load('/blag/blag.html', function()
+	$('#blag.preview').load('/blag/blag.html', function()
 	{
-		$('template').remove();
+		let count = $('li.post').length;
+		for(let i = 1; i < count; i++)
+		{
+			$('#blag.preview').children().eq(count - i).remove();
+		}
 	});
 
-	$('button[name="blog"]').on("click", function()
-	{
-		window.location.href = 'https://teahaile.com/blag';
-	});
+	$('#blag.embed').load('/blag/blag.html', function(){});
 
-	$('.header h1').on("click", function()
+	$('button[name="blag-button"]').on("click", function()
 	{
-		window.location.href = 'https://teahaile.com';
+		window.location.href = 'blag';
 	});
 
 	let stinger = stingers[Math.floor(Math.random() * stingers.length)];
 
-	$('.stinger').append(stinger);
-});
+	$('.stinger').append("\"" + stinger + "\"");
 
-// document.write('<script src="http://' + 'localhost'.split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+	/*$.ajax(
+	{
+		url : "blag.txt",
+		dataType : "text",
+		success : function(data)
+		{
+			alert(data);
+		}
+	});*/
+});
