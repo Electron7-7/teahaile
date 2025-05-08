@@ -9,18 +9,10 @@
 	--teaos-inset-text-color-green: linear-gradient(0deg, #6ac64b 0%, #318e35 100%);
 	--teaos-inset-text-color-light-blue: linear-gradient(0deg, #97cded 0%, #3c65a1 100%);
 	--teaos-background: url('/img/water.jpg') 700px -180px/2400px auto repeat;
-	--teaos-gradient-gray: radial-gradient(100% 90% at center top, #838f8ff2 0%, #525a5df2 95%);;
-	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);;
-	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);;
-	--teaos-gradient-dark-green: radial-gradient(100% 90% at center top, #4ab251f2 0%, #2f7538f2 95%);;
-}
-
-body
-{
-	display: flex;
-	flex-direction: column;
-	height: 100vh; margin: 0;
-	background: var(--teaos-background);
+	--teaos-gradient-gray: radial-gradient(100% 90% at center top, #838f8ff2 0%, #525a5df2 95%);
+	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);
+	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);
+	--teaos-gradient-purple: radial-gradient(100% 90% at center top, #986ddef2 0%, #633372f2 95%);
 }
 
 .use-custom-cursor,
@@ -69,10 +61,23 @@ a.inset
 	}
 }
 
-
-.header
+body
 {
-	display: inline-flex;
+	margin: 0;
+	background: var(--teaos-background);
+}
+
+#everything
+{
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+	backdrop-filter: blur(8px);
+}
+
+#header
+{
+	display: flex;
 	padding-left: 2vw;
 	background: var(--teaos-gradient-blue);
 	height: 140px;
@@ -89,6 +94,7 @@ a.inset
 			font-size: 70px;
 		}
 	}
+
 	& .stinger
 	{
 		font-family: 'Noto Sans Display';
@@ -100,13 +106,14 @@ a.inset
 
 #teaos
 {
-	display: flex;
 	flex: 1;
-	flex-wrap: wrap;
-	backdrop-filter: blur(8px);
+	overflow: auto;
+	z-index: 2;
+
 	& .content
 	{
 		margin: 10px;
+		flex-grow: 1;
 
 		& button
 		{
@@ -150,7 +157,7 @@ a.inset
 				padding-left: 2vmin;
 			}
 
-			& #blag-embed
+			& #blag.preview
 			{
 				font-family: Frutiger;
 				font-size: 18px;
@@ -158,6 +165,9 @@ a.inset
 				background: #fffffff0;
 				background-clip: text;
 				list-style: none;
+
+				& .separator
+				{ display: none; }
 			}
 		}
 	}

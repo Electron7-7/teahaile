@@ -15,14 +15,20 @@ const stingers = [
 
 $(document).ready(function()
 {
-	$('#blag-embed').load('/blag/blag.html', function()
+	$('#blag.preview').load('/blag/blag.html', function()
 	{
-		$('.post').remove();
+		let count = $('li.post').length;
+		for(let i = 1; i < count; i++)
+		{
+			$('#blag.preview').children().eq(count - i).remove();
+		}
 	});
 
-	$('button[name="blag"]').on("click", function()
+	$('#blag.embed').load('/blag/blag.html', function(){});
+
+	$('button[name="blag-button"]').on("click", function()
 	{
-		window.location.href = 'https://teahaile.com/blag';
+		window.location.href = 'blag';
 	});
 
 	let stinger = stingers[Math.floor(Math.random() * stingers.length)];

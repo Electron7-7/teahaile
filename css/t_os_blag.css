@@ -1,0 +1,44 @@
+@import url(t_os.css);
+
+#everything
+{
+	height: fit-content;
+}
+
+#teaos
+{
+	width: 90vw;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 10px;
+	border-radius: 20px;
+	align-self: center;
+	background: var(--teaos-gradient-purple);
+
+	& #blag.embed
+	{
+		font-family: Frutiger;
+		font-size: 18px;
+		line-height: 27px;
+		background: #fffffff0;
+		background-clip: text;
+		list-style: none;
+		height: fit-content;
+
+		& .post:first-child
+		{
+			& .separator
+			{
+				display: none;
+			}
+		}
+
+		& .separator
+		{
+			border-radius: 0;
+			border-top-width: 3px;
+			border-bottom-style: none;
+			border-top-color: #3bcda0cd;
+		}
+	}
+}
