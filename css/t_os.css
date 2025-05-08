@@ -9,10 +9,10 @@
 	--teaos-inset-text-color-green: linear-gradient(0deg, #6ac64b 0%, #318e35 100%);
 	--teaos-inset-text-color-light-blue: linear-gradient(0deg, #97cded 0%, #3c65a1 100%);
 	--teaos-background: url('/img/water.jpg') 700px -180px/2400px auto repeat;
+	--teaos-gradient-gray: radial-gradient(100% 90% at center top, #838f8ff2 0%, #525a5df2 95%);;
 	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);;
 	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);;
-	--teaos-gradient-green-hover: radial-gradient(100% 90% at center top, #5fdc67f2 0%, #58a745f2 95%);;
-	--teaos-gradient-green-active: radial-gradient(100% 90% at center top, #49b851f2 0%, #40a247f2 95%);;
+	--teaos-gradient-dark-green: radial-gradient(100% 90% at center top, #4ab251f2 0%, #2f7538f2 95%);;
 }
 
 body
@@ -107,17 +107,19 @@ a.inset
 	& .content
 	{
 		margin: 10px;
+
 		& button
 		{
 			display: flex;
 			justify-content: center;
-			width: 25vw;
-			max-width: 320px;
+			width: 320px;
 			height: 15vh;
+			min-height: 100px;
 			background: var(--teaos-gradient-green);
 			border: none;
 			border-radius: 15px;
 			font-family: 'Noto Sans Display';
+			margin-top: 10px;
 
 			&:hover
 			{ filter: brightness(110%); }
@@ -127,13 +129,36 @@ a.inset
 
 			p
 			{
-				font-size: 6vmin;
+				font-size: 60px;
 				align-self: center;
 			}
 		}
-		#blog-embed
+
+
+		& #blag-preview
 		{
-			
+			background: var(--teaos-gradient-gray);
+			height: fit-content;
+			border-radius: 15px;
+			padding: 2vmin 4vmin 1vmin 1vmin;
+			max-width: 900px;
+
+			& .title
+			{
+				font-size: 40px;
+				margin: 0;
+				padding-left: 2vmin;
+			}
+
+			& #blag-embed
+			{
+				font-family: Frutiger;
+				font-size: 18px;
+				line-height: 27px;
+				background: #fffffff0;
+				background-clip: text;
+				list-style: none;
+			}
 		}
 	}
 }

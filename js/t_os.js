@@ -15,12 +15,12 @@ const stingers = [
 
 $(document).ready(function()
 {
-	$('#blog-embed').load('/blag/blag.html', function()
+	$('#blag-embed').load('/blag/blag.html', function()
 	{
-		$('template').remove();
+		$('.post').remove();
 	});
 
-	$('button[name="blog"]').on("click", function()
+	$('button[name="blag"]').on("click", function()
 	{
 		window.location.href = 'https://teahaile.com/blag';
 	});

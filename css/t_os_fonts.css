@@ -157,7 +157,7 @@
 	font-family: 'Frutiger';
 	font-style: normal;
 	font-weight: bold;
-	src: local('Frutiger Bold'), url('/fonts/NotoSansDisplay//fonts/Frutiger_bold.woff') format('woff');
+	src: local('Frutiger Bold'), url('/fonts/Frutiger_bold.woff') format('woff');
 }
 
 @font-face
@@ -165,5 +165,5 @@
 	font-family: 'Frutiger';
 	font-style: normal;
 	font-weight: light;
-	src: local('Frutiger Light'), url('/fonts/NotoSansDisplay//fonts/Frutiger Light.ttf'), format('truetype');
+	src: local('Frutiger Light'), url('/fonts/Frutiger Light.ttf'), format('truetype');
 }
