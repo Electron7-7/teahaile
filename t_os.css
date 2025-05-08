@@ -28,7 +28,9 @@ body
 { cursor: url('img/airplane_cursor_low-res.png') 1 1, auto; }
 
 .use-custom-cursor a,
-.use-custom-cursor a *
+.use-custom-cursor a *,
+.use-custom-cursor button,
+.use-custom-cursor button *
 { cursor: url('img/airplane_cursor_low-res_select.png') 3 22, auto; }
 
 .inset
@@ -70,12 +72,11 @@ a.inset
 
 .header
 {
-	height: 140px;
+	display: inline-flex;
+	padding-left: 2vw;
 	background: var(--teaos-gradient-blue);
-	display: flex;
 	height: 140px;
-	justify-content: center;
-	align-items: flex-end;
+
 	& a, & a:hover, & a:active
 	{
 		background: var(--teaos-inset-text-color-default);
@@ -87,6 +88,13 @@ a.inset
 		{
 			font-size: 70px;
 		}
+	}
+	& .stinger
+	{
+		font-family: 'Noto Sans Display';
+		font-weight: 500;
+		font-size: 20px;
+		align-self: end;
 	}
 }
 
@@ -106,6 +114,7 @@ a.inset
 		display: flex;
 		justify-content: center;
 		width: 25vw;
+		max-width: 320px;
 		height: 15vh;
 		background: var(--teaos-gradient-green);
 		border: none;
