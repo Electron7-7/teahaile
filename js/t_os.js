@@ -29,13 +29,13 @@ $(document).ready(function()
 
 	$('.stinger').append("\"" + stinger + "\"");
 
-	$.ajax(
+	/*$.ajax(
 	{
 		url : "blag.txt",
 		dataType : "text",
 		success : function(data)
 		{
-			// alert(data);
+			alert(data);
 		}
-	});
+	});*/
 });

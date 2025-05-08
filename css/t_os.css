@@ -107,30 +107,33 @@ a.inset
 	& .content
 	{
 		margin: 10px;
-	}
-
-	& button
-	{
-		display: flex;
-		justify-content: center;
-		width: 25vw;
-		max-width: 320px;
-		height: 15vh;
-		background: var(--teaos-gradient-green);
-		border: none;
-		border-radius: 15px;
-		font-family: 'Noto Sans Display';
-
-		&:hover
-		{ filter: brightness(110%); }
-
-		&:active
-		{ filter: brightness(90%); }
-
-		p
+		& button
 		{
-			font-size: 6vmin;
-			align-self: center;
+			display: flex;
+			justify-content: center;
+			width: 25vw;
+			max-width: 320px;
+			height: 15vh;
+			background: var(--teaos-gradient-green);
+			border: none;
+			border-radius: 15px;
+			font-family: 'Noto Sans Display';
+
+			&:hover
+			{ filter: brightness(110%); }
+
+			&:active
+			{ filter: brightness(90%); }
+
+			p
+			{
+				font-size: 6vmin;
+				align-self: center;
+			}
+		}
+		#blog-embed
+		{
+			
 		}
 	}
 }
