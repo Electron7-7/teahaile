@@ -1,7 +1,14 @@
+@import url(t_os_fonts.css);
+@import url(t_os_glossy.css);
+
 :root
 {
-	--teaos-border: #eeddcc;
-	--teaos-background: radial-gradient(ellipse at center 0, #39575cff 100%, #638691ff 0%);
+	--teaos-inset-link-color: linear-gradient(0deg, #aa78ed 0%, #9f5eb5 100%);
+	--teaos-inset-text-outline: drop-shadow(-1.5px -1px 0.7px #0000004d);
+	--teaos-inset-text-color-default: linear-gradient(0deg, #9da8b7 0%, #d1dfe5 100%);
+	--teaos-inset-text-color-green: linear-gradient(0deg, #6ac64b 0%, #318e35 100%);
+	--teaos-inset-text-color-light-blue: linear-gradient(0deg, #97cded 0%, #3c65a1 100%);
+	--teaos-background: url('img/water.jpg') 700px -180px/2400px auto repeat;
 	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);;
 	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);;
 	--teaos-gradient-green-hover: radial-gradient(100% 90% at center top, #5fdc67f2 0%, #58a745f2 95%);;
@@ -13,6 +20,7 @@ body
 	display: flex;
 	flex-direction: column;
 	height: 100vh; margin: 0;
+	background: var(--teaos-background);
 }
 
 .use-custom-cursor,
@@ -26,29 +34,39 @@ body
 .inset
 {
 	text-transform: lowercase;
-	background: linear-gradient(0deg, #a6a6a6 0%, #d3d4d3 100%);
-	filter: drop-shadow(0px -2px 1px #00000034);
+	filter: var(--teaos-inset-text-outline);
+	background: var(--teaos-inset-text-color-default);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-a.inset:hover
+a.inset
 {
 	text-transform: lowercase;
-	background: linear-gradient(0deg, #bababa 0%, #dfdfdf 100%);
-	filter: drop-shadow(0px -2px 1px r#00000034);
+	background: var(--teaos-inset-link-color);
+	filter: var(--teaos-inset-text-outline);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	&:hover
+	{
+		text-transform: lowercase;
+		background: var(--teaos-inset-link-color);
+		filter: var(--teaos-inset-text-outline) brightness(110%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&:active
+	{
+		text-transform: lowercase;
+		background: var(--teaos-inset-link-color);
+		filter: var(--teaos-inset-text-outline);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
 
-a.inset:active
-{
-	text-transform: lowercase;
-	background: linear-gradient(0deg, #9b9b9b 0%, #c8c9c8 100%);
-	filter: drop-shadow(0px -2px 1px #00000034);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 .header
 {
@@ -58,15 +76,16 @@ a.inset:active
 	height: 140px;
 	justify-content: center;
 	align-items: flex-end;
-	a
+	& a, & a:hover, & a:active
 	{
+		background: var(--teaos-inset-text-color-default);
+		background-clip: text;
 		text-decoration: none;
-		font-family: NotoSansDisplay;
-		font-weight: lighter;
+		font-family: 'Noto Sans Display';
 		font-size: 90px;
-		b
+		& sup
 		{
-			font-size: 110px;
+			font-size: 70px;
 		}
 	}
 }
@@ -76,33 +95,33 @@ a.inset:active
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
-	background: var(--teaos-background);
-}
+	backdrop-filter: blur(8px);
+	& .content
+	{
+		margin: 10px;
+	}
 
-#teaos .content
-{
-	margin: 10px;
-}
+	& button
+	{
+		display: flex;
+		justify-content: center;
+		width: 25vw;
+		height: 15vh;
+		background: var(--teaos-gradient-green);
+		border: none;
+		border-radius: 15px;
+		font-family: 'Noto Sans Display';
 
-#teaos .button
-{
-	width: 200px;
-	height: 200px;
-	font-family: Bitter;
-	font-size: 62px;
-	text-align: center;
-	vertical-align: middle;
-	background: var(--teaos-gradient-green);
-	border: none;
-	border-radius: 15px;
-}
+		&:hover
+		{ filter: brightness(110%); }
 
-#teaos .button:hover
-{
-	background: var(--teaos-gradient-green-hover);
-}
+		&:active
+		{ filter: brightness(90%); }
 
-#teaos .button:active
-{
-	background: var(--teaos-gradient-green-active);
+		p
+		{
+			font-size: 6vmin;
+			align-self: center;
+		}
+	}
 }

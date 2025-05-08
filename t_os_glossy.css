@@ -7,7 +7,7 @@
 .glossy *
 { z-index: 1; }
 
-.glossy::after
+.glossy:after
 {
 	content: '';
 	z-index: 0;
