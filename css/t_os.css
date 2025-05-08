@@ -8,7 +8,7 @@
 	--teaos-inset-text-color-default: linear-gradient(0deg, #9da8b7 0%, #d1dfe5 100%);
 	--teaos-inset-text-color-green: linear-gradient(0deg, #6ac64b 0%, #318e35 100%);
 	--teaos-inset-text-color-light-blue: linear-gradient(0deg, #97cded 0%, #3c65a1 100%);
-	--teaos-background: url('img/water.jpg') 700px -180px/2400px auto repeat;
+	--teaos-background: url('/img/water.jpg') 700px -180px/2400px auto repeat;
 	--teaos-gradient-blue: radial-gradient(100% 90% at center top, #115069f2 0%, #349ec2f2 95%);;
 	--teaos-gradient-green: radial-gradient(100% 90% at center top, #5bd363f2 0%, #549c43f2 95%);;
 	--teaos-gradient-green-hover: radial-gradient(100% 90% at center top, #5fdc67f2 0%, #58a745f2 95%);;
@@ -25,13 +25,13 @@ body
 
 .use-custom-cursor,
 .use-custom-cursor *
-{ cursor: url('img/airplane_cursor_low-res.png') 1 1, auto; }
+{ cursor: url('/img/airplane_cursor_low-res.png') 1 1, auto; }
 
 .use-custom-cursor a,
 .use-custom-cursor a *,
 .use-custom-cursor button,
 .use-custom-cursor button *
-{ cursor: url('img/airplane_cursor_low-res_select.png') 3 22, auto; }
+{ cursor: url('/img/airplane_cursor_low-res_select.png') 3 22, auto; }
 
 .inset
 {
