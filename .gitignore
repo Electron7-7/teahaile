@@ -1,4 +1,3 @@
-sftp-config.json
-*.git
-git/
-.htaccess
+# Sublime Text project/workspace files
+*.sublime-project
+*.sublime-workspace
